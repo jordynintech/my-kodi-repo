@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.jordynintech" name="Jordyn's Kodi Repository" version="1.0.0" provider-name="Jordyn in Tech">
+    <extension point="xbmc.addon.repository" name="Jordyn's Kodi Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/jordynintech/my-kodi-repo/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jordynintech/my-kodi-repo/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jordynintech/my-kodi-repo/main/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>A personal repository of my favorite Kodi addons.</summary>
+        <description>This repository contains my favorite add-ons and is not official.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
