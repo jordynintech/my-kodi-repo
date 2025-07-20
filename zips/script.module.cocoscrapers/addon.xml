@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.cocoscrapers" name="CocoScrapers Module" version="1.0.1" provider-name="CocoScrapers">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">CocoScrapers Module</summary>
+        <description lang="en_GB">External scraper module for Kodi video add-ons</description>
+        <platform>all</platform>
+        <license>GPL-3.0-only</license>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>

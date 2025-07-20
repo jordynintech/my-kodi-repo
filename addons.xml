@@ -1,95 +1,54 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <addons>
-<addon id="repository.jordynintech" name="Jordyn's Kodi Repository" version="1.0.0" provider-name="Jordyn in Tech">
+  <addon id="repository.jordynintech" name="Jordyn's Kodi Repository" version="1.0.1" provider-name="Jordyn in Tech">
     <extension point="xbmc.addon.repository" name="Jordyn's Kodi Repository">
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/jordynintech/my-kodi-repo/main/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/jordynintech/my-kodi-repo/main/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/jordynintech/my-kodi-repo/main/zips/</datadir>
-        </dir>
-        <info>https://raw.githubusercontent.com/jordynintech/my-kodi-repo/main/repository.jordynintech/addon.xml</info>
-        <checksum>https://raw.githubusercontent.com/jordynintech/my-kodi-repo/main/repository.jordynintech/addon.xml.md5</checksum>
+      <dir>
+        <info compressed="false">https://raw.githubusercontent.com/jordynintech/my-kodi-repo/main/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jordynintech/my-kodi-repo/main/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jordynintech/my-kodi-repo/main/zips/</datadir>
+      </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>A personal repository of my favorite Kodi addons.</summary>
-        <description>This repository contains my favorite add-ons and is not official.</description>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
+      <summary>A personal repository of my favorite Kodi addons.</summary>
+      <description>This repository contains my favorite add-ons and is not official.</description>
+      <platform>all</platform>
     </extension>
-</addon>
-<addon id="repository.umbrella" version="2.2.6" provider-name="Umbrella">
-    <extension point="xbmc.addon.repository" name="Umbrella Repository">
-        <info compressed="false">https://umbrellaplug.github.io/repo/addons.xml</info>
-        <checksum>https://umbrellaplug.github.io/repo/addons.xml.md5</checksum>
-        <datadir zip="true">https://umbrellaplug.github.io</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Umbrella addon repo</summary>
-        <description>Umbrella repository</description>
-        <disclaimer>This repository is not a part of the official Kodi repository. It contains third-party addons that are not supported by the Kodi team.</disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-            <screenshot>screenshot01.jpg</screenshot>
-        </assets>
-    </extension>
-</addon>
-<addon id="repository.nixgates" version="2.0.1" provider-name="nixgates">
-    <extension point="xbmc.addon.repository" name="Nixgates Repo">
-        <info compressed="false">https://nixgates.github.io/packages/addons.xml</info>
-        <checksum>https://nixgates.github.io/packages/addons.xml.md5</checksum>
-        <datadir zip="true">https://nixgates.github.io/packages/</datadir>
+  </addon>
+  <addon id="plugin.video.umbrella" name="Umbrella" version="6.7.47" provider-name="Umbrella">
+    <requires>
+      <import addon="xbmc.python" version="3.0.0" />
+      <import addon="script.module.requests" />
+      <import addon="script.module.routing" />
+      <import addon="script.module.unidecode" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Nixgates' addon repository</summary>
-        <description>Official repository for Nixgates' addons.</description>
-        <platform>all</platform>
-        <disclaimer>This repository contains third-party addons that are not supported by the Kodi team.</disclaimer>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
+      <summary lang="en_GB">Umbrella</summary>
+      <description lang="en_GB">Umbrella addon for movies and TV shows</description>
+      <platform>all</platform>
+      <license>GPL-2.0-or-later</license>
+      <website>https://github.com/umbrellaplug</website>
+      <assets>
+        <icon>resources/media/icon.png</icon>
+        <fanart>resources/media/fanart.jpg</fanart>
+      </assets>
     </extension>
-</addon>
-<addon id="repository.a4k-scrapers-xbmc" version="1.0.0" provider-name="a4k-openproject">
-    <extension point="xbmc.addon.repository" name="a4kScrapers Repository">
-        <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/a4kScrapers/master/addon.xml</info>
-        <datadir zip="true">https://github.com/a4k-openproject/a4kScrapers/archive/refs/heads/master.zip</datadir>
-    </extension>
+  </addon>
+  <addon id="script.module.cocoscrapers" name="CocoScrapers Module" version="1.0.1" provider-name="CocoScrapers">
+    <requires>
+      <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
-        <summary>a4kScrapers Repository</summary>
-        <description>a4kScrapers is a free and open-source scraper module for Kodi and other media centers.</description>
-        <platform>all</platform>
-        <disclaimer>This repository contains third-party addons that are not supported by the Kodi team.</disclaimer>
+      <summary lang="en_GB">CocoScrapers Module</summary>
+      <description lang="en_GB">External scraper module for Kodi video add-ons</description>
+      <platform>all</platform>
+      <license>GPL-3.0-only</license>
+      <assets>
+        <icon>icon.png</icon>
+      </assets>
     </extension>
-</addon>
-<addon id="repository.crew" version="0.3.7" provider-name="Team Crew">
-    <extension point="xbmc.addon.repository" name="The Crew Repository">
-        <info compressed="false">http://team-crew.github.io/repo/addons.xml</info>
-        <checksum>http://team-crew.github.io/repo/addons.xml.md5</checksum>
-        <datadir zip="true">http://team-crew.github.io/repo/zips/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Team Crew Addons</summary>
-        <description>The Crew Addon Repository</description>
-        <disclaimer>This repository contains third-party addons that are not supported by the Kodi team.</disclaimer>
-        <platform>all</platform>
-    </extension>
-</addon>
-<addon id="repository.coco.scrapers" version="1.0.1" provider-name="cocojoe">
-    <extension point="xbmc.addon.repository" name="Coco Scrapers Repository">
-        <info compressed="false">https://raw.githubusercontent.com/cocojoe2411/repository.cocoscrapers/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/cocojoe2411/repository.cocoscrapers/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/cocojoe2411/repository.cocoscrapers/master/zips/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Official Coco Scrapers Repository</summary>
-        <description>The official repository for the Coco Scrapers module.</description>
-        <platform>all</platform>
-        <disclaimer>This repository contains third-party addons that are not supported by the Kodi team.</disclaimer>
-    </extension>
-</addon>
+  </addon>
 </addons>
